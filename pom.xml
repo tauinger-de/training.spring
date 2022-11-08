@@ -4,20 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.auinger</groupId>
-    <artifactId>training-spring</artifactId><packaging>pom</packaging>
+    <groupId>de.auinger.training.spring</groupId>
+    <artifactId>root-pom</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>00-exercise</module>
-        <module>02-xmlconfig</module>
+        <module>000-playground</module>
+        <module>020-xmlcontext</module>
         <module>core</module>
     </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <spring.version>5.3.20</spring.version>
+        <spring.version>5.3.23</spring.version>
     </properties>
     
     <dependencies>
