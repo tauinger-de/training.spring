@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <map>
+                <entry key="java.awt.Color" value="xmlcontext.l_values_spel.ColorPropertyEditor"/>
+            </map>
+        </property>
+    </bean>
+
+
+    <bean id="label1" class="javax.swing.JLabel">
+        <property name="text" value="Label 1"/>
+        <property name="background">
+            <bean class="java.awt.Color">
+                <constructor-arg type="int" value="255"/>
+                <constructor-arg type="int" value="0"/>
+                <constructor-arg type="int" value="0"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="label2" class="javax.swing.JLabel">
+        <property name="text" value="Label 2"/>
+        <property name="background" value="0,255,0"/>
+    </bean>
+
+    <bean id="label3" class="javax.swing.JLabel">
+        <property name="text" value="Label 3"/>
+        <property name="background" value="#{T(java.awt.Color).blue}"/>
+    </bean>
+
+    <bean id="label4" class="javax.swing.JLabel">
+        <property name="text" value="Label 4"/>
+        <property name="background" value="#{T(java.awt.Color).decode('0xffff00')}"/>
+    </bean>
+
+    <bean id="label5" class="javax.swing.JLabel">
+        <property name="text" value="Label 5"/>
+        <property name="font">
+            <bean class="java.awt.Font">
+                <constructor-arg value="#{'Ari' + 'al'}"/>
+                <constructor-arg value="#{T(java.awt.Font).BOLD + T(java.awt.Font).ITALIC}"/>
+                <constructor-arg value="#{20 + 4}"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="label6" class="javax.swing.JLabel">
+        <property name="text" value="Label 6"/>
+        <property name="background" value="#{new java.awt.Color(255, 0, 255)}"/>
+        <property name="font" value="#{new java.awt.Font('Arial', T(java.awt.Font).BOLD, 24)}"/>
+    </bean>
+
+    <bean id="label7" class="javax.swing.JLabel">
+        <property name="text" value="Label 7"/>
+        <property name="background"
+                  value="#{new java.awt.Color(new java.awt.Color(255, 0, 0).red, 0, 255)}"/>
+    </bean>
+
+    <!--suppress SpringBeanConstructorArgInspection -->
+    <bean id="mathService" class="core.math.service.DelegatingMathService">
+        <constructor-arg value="#{new core.math.calculator.SumCalculator()}"/>
+        <constructor-arg value="#{new core.math.calculator.PowerOfCalculator()}"/>
+    </bean>
+
+</beans>

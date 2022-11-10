@@ -1,0 +1,9 @@
+@startuml
+
+interface ListableBeanFactory {
++ String[] getBeanDefinitionNames()
++ String[] getBeanNamesForType(Class<?> type)
+
++ <T> Map<String, T> getBeansOfType(Class<T> type)
+}
+@enduml

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="sumCalc" class="core.math.calculator.SumCalculator" />
+
+    <bean id="moreComplexObject" class="xmlcontext.k_values_collections.ComplexObject">
+        <property name="someProperties">
+            <props>
+                <prop key="administrator">administrator@example.org</prop>
+                <prop key="support">support@example.org</prop>
+                <prop key="development">development@example.org</prop>
+            </props>
+        </property>
+
+        <property name="integerList">
+            <list>
+                <value>1</value>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+                <value>5</value>
+                <value>8</value>
+            </list>
+        </property>
+        <property name="mixedList">
+            <list>
+                <value>a list element followed by a reference</value>
+                <ref bean="sumCalc" />
+            </list>
+        </property>
+
+        <property name="someMap">
+            <map>
+                <entry key="an entry" value="just some string"/>
+                <entry key="a ref" value-ref="sumCalc"/>
+            </map>
+        </property>
+
+        <property name="someSet">
+            <set>
+                <value>true</value>
+                <value>false</value>
+                <value>false</value>
+                <value>true</value>
+            </set>
+        </property>
+    </bean>
+
+</beans>

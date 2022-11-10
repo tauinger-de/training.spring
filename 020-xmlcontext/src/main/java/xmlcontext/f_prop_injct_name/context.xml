@@ -4,6 +4,12 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="sumCalculator" class="core.math.calculator.SumCalculator" />
+    <bean id="sumCalculator" class="core.math.calculator.SumCalculator"/>
+
+    <bean id="powerOfCalculator" class="core.math.calculator.PowerOfCalculator"/>
+
+
+    <bean class="core.math.service.SetterBasedMathService" autowire="byName">
+    </bean>
 
 </beans>

@@ -4,6 +4,8 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="sumCalculator" class="core.math.calculator.SumCalculator" />
+    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+        <property name="locations" value="classpath:xmlcontext/q_properties/app.properties"/>
+    </bean>
 
 </beans>

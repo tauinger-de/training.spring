@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="core.math.service.DelegatingMathService">
+        <constructor-arg>
+            <bean class="core.math.calculator.SumCalculator"/>
+        </constructor-arg>
+        <constructor-arg>
+            <bean class="core.math.calculator.PowerOfCalculator"/>
+        </constructor-arg>
+    </bean>
+
+    <bean class="core.math.service.SetterBasedMathService">
+        <property name="sumCalculator">
+            <bean class="core.math.calculator.SumCalculator"/>
+        </property>
+        <property name="powerOfCalculator">
+            <bean class="core.math.calculator.PowerOfCalculator"/>
+        </property>
+    </bean>
+
+</beans>

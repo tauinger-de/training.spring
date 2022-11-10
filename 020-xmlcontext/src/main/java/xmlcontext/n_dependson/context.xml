@@ -4,6 +4,8 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="sumCalculator" class="core.math.calculator.SumCalculator" />
+    <bean class="core.math.calculator.SumCalculator" depends-on="powCalc"/>
+
+    <bean id="powCalc" class="core.math.calculator.PowerOfCalculator"/>
 
 </beans>

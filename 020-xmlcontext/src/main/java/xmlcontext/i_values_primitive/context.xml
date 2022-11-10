@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="core.math.calculator.SumCalculator"/>
+
+    <bean id="whatever" class="core.math.calculator.PowerOfCalculator"/>
+
+    <bean class="core.math.service.ParameterizedMathService" autowire="byType">
+        <!-- you can define a value either as an XML attribute or child element -->
+        <constructor-arg value="1"/>
+        <constructor-arg value="1"/>
+        <constructor-arg>
+            <value>8</value>
+        </constructor-arg>
+    </bean>
+
+</beans>

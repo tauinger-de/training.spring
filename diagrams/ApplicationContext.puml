@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+interface ApplicationContext
+interface ListableBeanFactory
+interface BeanFactory
+interface EnvironmentCapable
+interface Environment
+abstract class AbstractApplicationContext
+
+ApplicationContext -up-|> ListableBeanFactory
+ApplicationContext -up-|> EnvironmentCapable
+
+ListableBeanFactory -up-|> BeanFactory
+EnvironmentCapable -left-> Environment
+
+AbstractApplicationContext -up-|> ApplicationContext
+GenericApplicationContext -up-|> AbstractApplicationContext
+GenericXmlApplicationContext -up-|> GenericApplicationContext
+StaticApplicationContext -up-|> GenericApplicationContext
+AnnotationConfigApplicationContext -up-|> GenericApplicationContext
+
+@enduml
