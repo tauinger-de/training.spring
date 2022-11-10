@@ -4,7 +4,7 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="core.math.service.DelegatingMathService">
+    <bean class="core.math.service.ConstructorInjectedMathService">
         <constructor-arg>
             <bean class="core.math.calculator.SumCalculator"/>
         </constructor-arg>
@@ -13,7 +13,7 @@
         </constructor-arg>
     </bean>
 
-    <bean class="core.math.service.SetterBasedMathService">
+    <bean class="core.math.service.SetterInjectedMathService">
         <property name="sumCalculator">
             <bean class="core.math.calculator.SumCalculator"/>
         </property>

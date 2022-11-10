@@ -9,7 +9,7 @@
     <bean id="powCalc" class="core.math.calculator.PowerOfCalculator"/>
 
 
-    <bean class="core.math.service.SetterBasedMathService">
+    <bean class="core.math.service.SetterInjectedMathService">
         <property name="sumCalculator" ref="sumCalc" />
         <property name="powerOfCalculator" ref="powCalc" />
     </bean>

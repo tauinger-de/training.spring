@@ -13,7 +13,7 @@
     -->
 
 
-    <bean class="core.math.service.SetterBasedMathService" autowire="byType">
+    <bean class="core.math.service.SetterInjectedMathService" autowire="byType">
     </bean>
 
 </beans>

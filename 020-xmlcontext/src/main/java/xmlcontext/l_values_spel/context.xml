@@ -63,7 +63,7 @@
     </bean>
 
     <!--suppress SpringBeanConstructorArgInspection -->
-    <bean id="mathService" class="core.math.service.DelegatingMathService">
+    <bean id="mathService" class="core.math.service.ConstructorInjectedMathService">
         <constructor-arg value="#{new core.math.calculator.SumCalculator()}"/>
         <constructor-arg value="#{new core.math.calculator.PowerOfCalculator()}"/>
     </bean>

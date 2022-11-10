@@ -1,15 +1,17 @@
 package core.math.service;
 
+import core.Fmt;
 import core.math.calculator.PowerOfCalculator;
 import core.math.calculator.SumCalculator;
 
-public class DelegatingMathService implements MathService {
+public class ConstructorInjectedMathService implements MathService {
 
     private final SumCalculator sumCalculator;
 
     private final PowerOfCalculator powerOfCalculator;
 
-    public DelegatingMathService(SumCalculator sumCalculator, PowerOfCalculator powerOfCalculator) {
+    public ConstructorInjectedMathService(SumCalculator sumCalculator, PowerOfCalculator powerOfCalculator) {
+        Fmt.printf("Instantiating a %s instance", getClass().getSimpleName());
         this.sumCalculator = sumCalculator;
         this.powerOfCalculator = powerOfCalculator;
     }

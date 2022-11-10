@@ -22,6 +22,7 @@
 
     <build>
         <resources>
+            <!-- super important, since we store resource files in src/main/java folder for convenience -->
             <resource>
                 <directory>${basedir}/src/main/java</directory>
                 <includes>

@@ -4,8 +4,29 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!-- properties -->
+
     <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
         <property name="locations" value="classpath:xmlcontext/q_properties/app.properties"/>
+    </bean>
+
+
+    <!-- regular beans -->
+
+    <bean class="core.math.calculator.SumCalculator"/>
+
+    <bean class="core.math.calculator.PowerOfCalculator"/>
+
+    <bean class="core.math.service.ParameterizedMathService" autowire="byType">
+        <constructor-arg value="${term1}" />
+        <constructor-arg value="${term2}" />
+        <constructor-arg value="${power}" />
+    </bean>
+
+    <bean class="core.math.service.ParameterizedMathService" autowire="byType">
+        <constructor-arg value="${term1}" />
+        <constructor-arg value="#{${term2} * 2}" name="term2" />
+        <constructor-arg value="#{${term2} * 3}" name="power" />
     </bean>
 
 </beans>

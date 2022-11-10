@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- We can also define properties within XML. It's a bit unusual but works. -->
+    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+        <property name="properties">
+            <props>
+                <prop key="h2port">9092</prop>
+            </props>
+        </property>
+    </bean>
+
+
+    <bean id="h2launcher" class="core.h2.H2Launcher"
+          init-method="start"
+          destroy-method="stop">
+        <property name="port" value="${h2port}"/>
+    </bean>
+
+    <bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+          depends-on="h2launcher">
+        <property name="driverClassName" value="org.h2.Driver"/>
+        <property name="url" value="jdbc:h2:tcp://localhost:${h2port}/~/training.spring"/>
+    </bean>
+
+</beans>

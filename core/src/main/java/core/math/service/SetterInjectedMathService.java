@@ -1,13 +1,18 @@
 package core.math.service;
 
+import core.Fmt;
 import core.math.calculator.PowerOfCalculator;
 import core.math.calculator.SumCalculator;
 
-public class SetterBasedMathService implements MathService {
+public class SetterInjectedMathService implements MathService {
 
     protected SumCalculator sumCalculator;
 
     protected PowerOfCalculator powerOfCalculator;
+
+    public SetterInjectedMathService() {
+        Fmt.printf("Instantiating a %s instance", getClass().getSimpleName());
+    }
 
     @Override
     public int calculateOnePlusTwoToThePowerOfThree() {

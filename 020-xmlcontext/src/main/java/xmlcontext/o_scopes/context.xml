@@ -9,8 +9,8 @@
     <bean class="core.math.calculator.PowerOfCalculator" scope="prototype"/>
 
 
-    <bean id="mathService1" class="core.math.service.DelegatingMathService" autowire="constructor"/>
+    <bean id="mathService1" class="core.math.service.ConstructorInjectedMathService" autowire="constructor"/>
 
-    <bean id="mathService2" class="core.math.service.DelegatingMathService" autowire="constructor"/>
+    <bean id="mathService2" class="core.math.service.ConstructorInjectedMathService" autowire="constructor"/>
 
 </beans>

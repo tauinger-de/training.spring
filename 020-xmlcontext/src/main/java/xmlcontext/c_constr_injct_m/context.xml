@@ -9,7 +9,7 @@
     <bean id="powerOfCalculator" class="core.math.calculator.PowerOfCalculator" />
 
 
-    <bean class="core.math.service.DelegatingMathService">
+    <bean class="core.math.service.ConstructorInjectedMathService">
         <constructor-arg ref="powerOfCalculator" />
         <constructor-arg ref="sumCalculator" />
     </bean>

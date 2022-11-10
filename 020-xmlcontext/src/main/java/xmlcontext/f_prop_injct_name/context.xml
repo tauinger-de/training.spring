@@ -9,7 +9,7 @@
     <bean id="powerOfCalculator" class="core.math.calculator.PowerOfCalculator"/>
 
 
-    <bean class="core.math.service.SetterBasedMathService" autowire="byName">
+    <bean class="core.math.service.SetterInjectedMathService" autowire="byName">
     </bean>
 
 </beans>
