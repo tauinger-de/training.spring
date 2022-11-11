@@ -11,6 +11,6 @@
 
     <bean id="mathService1" class="core.math.service.ConstructorInjectedMathService" autowire="constructor"/>
 
-    <bean id="mathService2" class="core.math.service.ConstructorInjectedMathService" autowire="constructor"/>
+    <bean id="mathService2" class="core.math.service.SetterInjectedMathService" autowire="byType"/>
 
 </beans>
