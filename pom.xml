@@ -12,6 +12,7 @@
     <modules>
         <module>000-playground</module>
         <module>020-xmlcontext</module>
+        <module>030-annotation_context</module>
         <module>core</module>
     </modules>
 
