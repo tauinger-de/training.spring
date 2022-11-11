@@ -13,7 +13,7 @@
     </bean>
 
 
-    <bean id="h2launcher" class="core.h2.H2Launcher"
+    <bean id="h2launcher" class="core.h2.H2Server"
           init-method="start"
           destroy-method="stop">
         <property name="port" value="${h2port}"/>

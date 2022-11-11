@@ -4,22 +4,22 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="sumCalculator" class="core.math.calculator.SumCalculator" />
+    <bean id="sumCalculator" class="core.math.calculator.SumCalculator"/>
 
-    <bean id="powerOfCalculator" class="core.math.calculator.PowerOfCalculator" />
+    <bean id="powerOfCalculator" class="core.math.calculator.PowerOfCalculator"/>
 
 
     <bean class="core.math.service.ConstructorInjectedMathService">
-        <constructor-arg ref="powerOfCalculator" />
-        <constructor-arg ref="sumCalculator" />
+        <constructor-arg ref="powerOfCalculator"/>
+        <constructor-arg ref="sumCalculator"/>
     </bean>
 
 
     <!-- order of args -->
 
     <bean class="xmlcontext.c_constr_injct_m.MultiString">
-        <constructor-arg name="s2" value="second" />
-        <constructor-arg value="first" />
+        <constructor-arg name="s2" value="second"/>
+        <constructor-arg value="first"/>
     </bean>
 
 </beans>

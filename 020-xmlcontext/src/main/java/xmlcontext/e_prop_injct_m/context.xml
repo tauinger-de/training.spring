@@ -10,8 +10,8 @@
 
 
     <bean class="core.math.service.SetterInjectedMathService">
-        <property name="sumCalculator" ref="sumCalc" />
-        <property name="powerOfCalculator" ref="powCalc" />
+        <property name="sumCalculator" ref="sumCalc"/>
+        <property name="powerOfCalculator" ref="powCalc"/>
     </bean>
 
 </beans>

@@ -18,15 +18,15 @@
     <bean class="core.math.calculator.PowerOfCalculator"/>
 
     <bean class="core.math.service.ParameterizedMathService" autowire="byType">
-        <constructor-arg value="${term1}" />
-        <constructor-arg value="${term2}" />
-        <constructor-arg value="${power}" />
+        <constructor-arg value="${term1}"/>
+        <constructor-arg value="${term2}"/>
+        <constructor-arg value="${power}"/>
     </bean>
 
     <bean class="core.math.service.ParameterizedMathService" autowire="byType">
-        <constructor-arg value="${term1}" />
-        <constructor-arg value="#{${term2} * 2}" name="term2" />
-        <constructor-arg value="#{${term2} * 3}" name="power" />
+        <constructor-arg value="${term1}"/>
+        <constructor-arg value="#{${term2} * 2}" name="term2"/>
+        <constructor-arg value="#{${term2} * 3}" name="power"/>
     </bean>
 
 </beans>

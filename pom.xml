@@ -13,6 +13,9 @@
         <module>000-playground</module>
         <module>020-xmlcontext</module>
         <module>030-annotation_context</module>
+        <module>033-beans_configuration</module>
+        <module>060-aop</module>
+        <module>090-jdbc</module>
         <module>core</module>
     </modules>
 
@@ -21,7 +24,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <spring.version>5.3.23</spring.version>
     </properties>
-    
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -40,5 +43,5 @@
             <version>2.1.214</version>
         </dependency>
     </dependencies>
-    
+
 </project>

@@ -4,7 +4,7 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="sumCalc" class="core.math.calculator.SumCalculator" />
+    <bean id="sumCalc" class="core.math.calculator.SumCalculator"/>
 
     <bean id="moreComplexObject" class="xmlcontext.k_values_collections.ComplexObject">
         <property name="someProperties">
@@ -28,7 +28,7 @@
         <property name="mixedList">
             <list>
                 <value>a list element followed by a reference</value>
-                <ref bean="sumCalc" />
+                <ref bean="sumCalc"/>
             </list>
         </property>
 
