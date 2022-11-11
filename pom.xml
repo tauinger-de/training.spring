@@ -12,6 +12,7 @@
     <modules>
         <module>000-playground</module>
         <module>020-xmlcontext</module>
+        <module>023-xml_factories</module>
         <module>030-annotation_context</module>
         <module>033-beans_configuration</module>
         <module>060-aop</module>
