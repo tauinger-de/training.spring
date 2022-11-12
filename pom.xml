@@ -15,16 +15,18 @@
         <module>023-xml_factories</module>
         <module>030-annotation_context</module>
         <module>031-exercise-annotation_context</module>
-        <module>033-beans_configuration</module>
+        <module>035-beans_configuration</module>
         <module>060-aop</module>
         <module>090-jdbc</module>
         <module>core</module>
+        <module>exrc-blockchain</module>
     </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <spring.version>5.3.23</spring.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -37,6 +39,12 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
         </dependency>
 
         <dependency>
