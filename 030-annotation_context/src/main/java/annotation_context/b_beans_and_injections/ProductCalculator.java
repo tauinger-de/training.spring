@@ -1,8 +1,8 @@
-package annotation_context.b_beans;
+package annotation_context.b_beans_and_injections;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component // or @Service
 public class ProductCalculator {
 
     public int productOf(int factor1, int factor2) {
