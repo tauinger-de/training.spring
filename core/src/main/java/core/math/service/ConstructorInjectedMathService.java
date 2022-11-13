@@ -24,4 +24,11 @@ public class ConstructorInjectedMathService implements MathService {
         );
     }
 
+    public SumCalculator getSumCalculator() {
+        return sumCalculator;
+    }
+
+    public PowerOfCalculator getPowerOfCalculator() {
+        return powerOfCalculator;
+    }
 }

@@ -16,10 +16,13 @@
         <module>030-annotation_context</module>
         <module>031-exercise-annotation_context</module>
         <module>035-beans_configuration</module>
+        <module>040-context-infrastructure</module>
+        <module>050-resources</module>
         <module>060-aop</module>
         <module>090-jdbc</module>
         <module>core</module>
         <module>exrc-blockchain</module>
+        <module>excr-accounting</module>
     </modules>
 
     <properties>
@@ -39,6 +42,12 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version>
         </dependency>
 
         <dependency>
