@@ -7,7 +7,7 @@
     <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
         <property name="customEditors">
             <map>
-                <entry key="java.awt.Color" value="xmlcontext.l_values_spel.ColorPropertyEditor"/>
+                <entry key="java.awt.Color" value="spel.ColorPropertyEditor"/>
             </map>
         </property>
     </bean>

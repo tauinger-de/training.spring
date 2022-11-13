@@ -1,4 +1,4 @@
-package exercise.annotation_context;
+package core.log;
 
 import java.util.ArrayList;
 import java.util.List;

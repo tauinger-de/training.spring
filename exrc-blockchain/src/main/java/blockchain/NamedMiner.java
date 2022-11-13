@@ -6,28 +6,26 @@ import org.springframework.util.DigestUtils;
 
 import java.util.List;
 
-public class ConfigurableMiner implements Miner {
+public class NamedMiner implements Miner {
 
     private final String name;
 
     @Getter
     private Block minedBlock = null;
 
-    public ConfigurableMiner(String name) {
+    public NamedMiner(String name) {
         this.name = name;
         Fmt.printf("Miner '%s' starting up...", name);
-        startUp();
-    }
-
-    private void startUp() {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-        }
     }
 
     @Override
     public void mine(List<Transaction> pendingTransactions, int index, String previousBlockHash, int difficulty) {
+        // already worked?
+        if (minedBlock != null) {
+            throw new IllegalStateException("Miner exhausted -- try a new one pls!");
+        }
+
+        //
         String requiredPrefix = "0".repeat(difficulty);
 
         var startTimeMillis = System.currentTimeMillis();

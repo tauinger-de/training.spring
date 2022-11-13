@@ -1,6 +1,6 @@
 package blockchain;
 
-public class MainBlockchain {
+public class App {
 
     public static void main(String[] args) {
         var blockchain = new Blockchain();

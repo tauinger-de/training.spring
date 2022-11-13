@@ -1,4 +1,4 @@
-package xmlcontext.l_values_spel;
+package spel;
 
 import java.awt.*;
 import java.beans.PropertyEditorSupport;

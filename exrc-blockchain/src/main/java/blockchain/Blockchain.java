@@ -10,14 +10,22 @@ public class Blockchain {
 
     private final List<Block> blocks = new ArrayList<>();
 
-    private int difficulty = 5;
+    private final int difficulty = 6;
 
     private int minerCount = 0;
 
     public Blockchain() {
+        System.out.println("Blockchain creation in progress...");
+
         // setup blockchain with Genesis block
         Block genesisBlock = new Block(0, 0, "", Collections.emptyList());
         writeBlock(genesisBlock);
+
+        // do a lot of thinking at startup
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+        }
     }
 
     public void registerTransaction(Transaction transaction) {
@@ -55,7 +63,7 @@ public class Blockchain {
     }
 
     private Miner getMiner() {
-        var miner = new ConfigurableMiner(String.valueOf(minerCount++));
+        var miner = new NamedMiner(String.valueOf(minerCount++));
         return miner;
     }
 

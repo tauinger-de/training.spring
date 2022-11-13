@@ -23,6 +23,7 @@
         <module>core</module>
         <module>exrc-blockchain</module>
         <module>excr-accounting</module>
+        <module>spel</module>
     </modules>
 
     <properties>
