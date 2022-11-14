@@ -23,7 +23,7 @@
         <module>090-jdbc</module>
         <module>core</module>
         <module>exrc-blockchain</module>
-        <module>excr-accounting</module>
+        <module>exrc-accounting</module>
     </modules>
 
     <properties>
