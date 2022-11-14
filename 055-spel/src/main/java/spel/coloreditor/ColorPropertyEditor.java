@@ -1,4 +1,4 @@
-package spel;
+package spel.coloreditor;
 
 import java.awt.*;
 import java.beans.PropertyEditorSupport;

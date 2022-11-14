@@ -18,12 +18,12 @@
         <module>035-beans_configuration</module>
         <module>040-context-infrastructure</module>
         <module>050-resources</module>
+        <module>055-spel</module>
         <module>060-aop</module>
         <module>090-jdbc</module>
         <module>core</module>
         <module>exrc-blockchain</module>
         <module>excr-accounting</module>
-        <module>spel</module>
     </modules>
 
     <properties>

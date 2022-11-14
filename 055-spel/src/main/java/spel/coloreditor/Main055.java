@@ -1,4 +1,4 @@
-package spel;
+package spel.coloreditor;
 
 import org.springframework.context.support.GenericXmlApplicationContext;
 
