@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App
+interface SomeService
+class SomeServiceImplementation
+interface InvocationHandler
+class TraceInvocationHandler
+class Proxy
+
+App -right-> SomeService
+Proxy -up-|> SomeService
+Proxy -right-> InvocationHandler
+TraceInvocationHandler -up-|> InvocationHandler
+TraceInvocationHandler -right-> SomeServiceImplementation
+
+@enduml
