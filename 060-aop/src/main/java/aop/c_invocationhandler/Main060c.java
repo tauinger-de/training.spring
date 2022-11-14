@@ -1,4 +1,4 @@
-package aop.a_invocationhandler;
+package aop.c_invocationhandler;
 
 import core.math.service.MathService;
 import core.math.service.SetterInjectedMathService;
@@ -6,7 +6,7 @@ import core.math.service.SetterInjectedMathService;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
-public class Main060a {
+public class Main060c {
 
     public static void main(String[] args) {
         MathService noOpProxy = createProxy(

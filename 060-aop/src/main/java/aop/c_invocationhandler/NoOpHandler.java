@@ -1,4 +1,4 @@
-package aop.a_invocationhandler;
+package aop.c_invocationhandler;
 
 import core.Fmt;
 
