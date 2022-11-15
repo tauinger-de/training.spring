@@ -9,7 +9,6 @@ public class Main060f {
 
     public static void main(String[] args) {
         var advisor = new NameMatchMethodPointcutAdvisor();
-
         advisor.setAdvice(new TracingBeforeAdvice());
         advisor.addMethodName("power*");
 

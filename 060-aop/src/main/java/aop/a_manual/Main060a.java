@@ -12,6 +12,7 @@ public class Main060a {
         traceProxy.calculateOnePlusTwoToThePowerOfThree();
     }
 
+    // helper function to represent the act of creating a proxy
     private static MathService createProxy(MathService realMathService) {
         return new MathServiceProxy(realMathService);
     }

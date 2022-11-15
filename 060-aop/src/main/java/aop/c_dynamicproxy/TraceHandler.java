@@ -1,4 +1,4 @@
-package aop.c_invocationhandler;
+package aop.c_dynamicproxy;
 
 import core.Fmt;
 

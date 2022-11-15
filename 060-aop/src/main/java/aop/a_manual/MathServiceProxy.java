@@ -12,8 +12,13 @@ public class MathServiceProxy implements MathService {
 
     @Override
     public int calculateOnePlusTwoToThePowerOfThree() {
+        // before
         System.out.println("Before calculateOnePlusTwoToThePowerOfThree()");
+
+        // actual call
         var result = realMathService.calculateOnePlusTwoToThePowerOfThree();
+
+        // after
         System.out.println("After calculateOnePlusTwoToThePowerOfThree()");
         return result;
     }

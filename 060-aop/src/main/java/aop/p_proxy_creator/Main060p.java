@@ -1,4 +1,4 @@
-package aop.p_pointcut_advisor;
+package aop.p_proxy_creator;
 
 import core.Ctx;
 import core.aop.TracingBeforeAdvice;

@@ -1,4 +1,4 @@
-package aop.e_proxyfactorybean;
+package aop.d_proxyfactorybean;
 
 import core.Fmt;
 import core.aop.TracingBeforeAdvice;
@@ -7,7 +7,7 @@ import core.math.service.MathService;
 import core.math.service.StandaloneMathService;
 import org.springframework.aop.framework.ProxyFactoryBean;
 
-public class Main060e {
+public class Main060d {
 
     public static void main(String[] args) throws ClassNotFoundException {
         createProxyForInterface();

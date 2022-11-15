@@ -1,4 +1,4 @@
-package aop.c_invocationhandler;
+package aop.c_dynamicproxy;
 
 import core.math.service.MathService;
 import core.math.service.SetterInjectedMathService;
@@ -9,14 +9,6 @@ import java.lang.reflect.Proxy;
 public class Main060c {
 
     public static void main(String[] args) {
-        MathService noOpProxy = createProxy(
-                MathService.class,
-                new NoOpHandler()
-        );
-        noOpProxy.calculateOnePlusTwoToThePowerOfThree();
-
-        System.out.println();
-
         MathService traceProxy = createProxy(
                 MathService.class,
                 new TraceHandler(new SetterInjectedMathService())
@@ -24,6 +16,7 @@ public class Main060c {
         traceProxy.calculateOnePlusTwoToThePowerOfThree();
     }
 
+    @SuppressWarnings("unchecked")
     private static <T> T createProxy(Class<T> iface, InvocationHandler handler) {
         return (T) Proxy.newProxyInstance(
                 Thread.currentThread().getContextClassLoader(),
