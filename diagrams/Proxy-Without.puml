@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App
+interface SomeService
+class SomeServiceImplementation
+
+App -right-> SomeService
+SomeServiceImplementation -up-|> SomeService
+
+@enduml
