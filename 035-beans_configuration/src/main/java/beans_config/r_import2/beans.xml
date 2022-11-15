@@ -6,7 +6,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- partially manual and automatic wiring using beans from various imported sources -->
-    <bean class="core.math.service.SetterInjectedMathService" autowire="byType">
+    <bean id="setterInjectedMathService" class="core.math.service.SetterInjectedMathService" autowire="byType">
         <property name="sumCalculator" ref="sumCalc1"/>
     </bean>
 
