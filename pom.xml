@@ -14,7 +14,6 @@
         <module>020-xmlcontext</module>
         <module>023-xml_factories</module>
         <module>030-annotation_context</module>
-        <module>031-exercise-annotation_context</module>
         <module>035-beans_configuration</module>
         <module>040-context-infrastructure</module>
         <module>050-resources</module>
