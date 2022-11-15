@@ -2,7 +2,7 @@
 
 Erstellen Sie ein Tool, welches für alle Beans im Context einen Bericht ausgibt.
 
-Dies kann einfacher Text über System.out sein oder sogar Markdown mit Output in eine Datei, je nachdem, was Sie
+Dies kann einfacher Text über `System.out` sein oder sogar eine Datei im Markdown-Format -- je nachdem, was Sie
 gut beherrschen.
 
 Die Ausgabe könnte wie folgt aussehen:

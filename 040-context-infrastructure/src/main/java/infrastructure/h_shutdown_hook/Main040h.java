@@ -1,11 +1,6 @@
-package infrastructure.h_shutdown_hooks;
+package infrastructure.h_shutdown_hook;
 
-import core.math.calculator.PowerOfCalculator;
-import core.math.calculator.SumCalculator;
-import core.math.service.ConstructorInjectedMathService;
-import core.math.service.MathService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration

@@ -1,4 +1,4 @@
-package infrastructure.h_shutdown_hooks;
+package infrastructure.h_shutdown_hook;
 
 import org.springframework.stereotype.Component;
 

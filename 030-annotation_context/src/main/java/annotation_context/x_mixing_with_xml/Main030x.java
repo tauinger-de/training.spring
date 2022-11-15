@@ -1,6 +1,6 @@
 package annotation_context.x_mixing_with_xml;
 
-import core.Fmt;
+import core.Ctx;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class Main030x {
@@ -10,10 +10,7 @@ public class Main030x {
         var applicationContext = new GenericXmlApplicationContext(Main030x.class, "context.xml");
 
         // write data
-        Fmt.printf("The context contains %d bean(s):", applicationContext.getBeanDefinitionCount());
-        for (String name : applicationContext.getBeanDefinitionNames()) {
-            Fmt.printf("  - %s", name);
-        }
+        Ctx.printDetails(applicationContext);
     }
 
 }
