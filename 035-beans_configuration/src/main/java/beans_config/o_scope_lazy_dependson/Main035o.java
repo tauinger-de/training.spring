@@ -1,7 +1,6 @@
 package beans_config.o_scope_lazy_dependson;
 
 import core.Ctx;
-import core.h2.H2Server;
 import core.math.calculator.PowerOfCalculator;
 import core.math.calculator.SumCalculator;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -33,3 +32,10 @@ public class Main035o {
         return new SumCalculator();
     }
 }
+
+// In welcher Reihenfolge ewrden die folgenden Ausgaben erscheinen?
+// 1 instantiating PowerOfCalculator
+// 2 instantiating SumCalculator
+// 3 Context Details
+
+// und was ändert sich, wenn @Lazy entfernt wird (beide Male)
