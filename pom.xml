@@ -19,7 +19,6 @@
         <module>050-resources</module>
         <module>055-spel</module>
         <module>060-aop</module>
-        <module>090-jdbc</module>
         <module>core</module>
         <module>exrc-blockchain</module>
         <module>exrc-accounting</module>
