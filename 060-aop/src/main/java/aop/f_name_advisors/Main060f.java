@@ -9,8 +9,8 @@ public class Main060f {
 
     public static void main(String[] args) {
         var advisor = new NameMatchMethodPointcutAdvisor();
-        advisor.setAdvice(new TracingBeforeAdvice());
-        advisor.addMethodName("power*");
+        advisor.setAdvice(new TracingBeforeAdvice()); // define what to do
+        advisor.addMethodName("power*"); // define where to do it
 
         ProxyFactoryBean proxyFactory = new ProxyFactoryBean();
         proxyFactory.addAdvisor(advisor);
