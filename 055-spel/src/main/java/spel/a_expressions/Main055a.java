@@ -11,9 +11,9 @@ public class Main055a {
     }
 
     private static void methodExpression() {
-        var powerOfCalculator = new PowerOfCalculator();
-
         var expressionParser = new SpelExpressionParser();
+
+        var powerOfCalculator = new PowerOfCalculator();
         var context = new StandardEvaluationContext(powerOfCalculator);
 
         var result = expressionParser
