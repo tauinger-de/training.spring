@@ -1,7 +1,6 @@
 package aop.d_proxyfactorybean;
 
 import core.Fmt;
-import core.aop.TracingBeforeAdvice;
 import core.math.calculator.SumCalculator;
 import core.math.service.MathService;
 import core.math.service.StandaloneMathService;
@@ -18,7 +17,7 @@ public class Main060d {
     private static void createProxyForInterface() throws ClassNotFoundException {
         // construct proxy using Spring's ProxyFactoryBean
         ProxyFactoryBean proxyFactory = new ProxyFactoryBean();
-        proxyFactory.addAdvice(new TracingBeforeAdvice());
+        proxyFactory.addAdvice(new ProfilingAspect());
         proxyFactory.setProxyInterfaces(new Class<?>[]{MathService.class});
         proxyFactory.setTarget(new StandaloneMathService());
         var mathService = (MathService) proxyFactory.getObject();
@@ -31,7 +30,7 @@ public class Main060d {
     private static void createProxyForClass() {
         // construct proxy using Spring's ProxyFactoryBean
         ProxyFactoryBean proxyFactory = new ProxyFactoryBean();
-        proxyFactory.addAdvice(new TracingBeforeAdvice());
+        proxyFactory.addAdvice(new ProfilingAspect());
         proxyFactory.setTarget(new SumCalculator());
         var sumCalculator = (SumCalculator) proxyFactory.getObject();
 
