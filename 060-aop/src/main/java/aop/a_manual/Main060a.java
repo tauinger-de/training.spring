@@ -6,10 +6,11 @@ import core.math.service.StandaloneMathService;
 public class Main060a {
 
     public static void main(String[] args) {
-        MathService traceProxy = createProxy(
+        MathService mathService = createProxy(
                 new StandaloneMathService()
         );
-        traceProxy.calculateOnePlusTwoToThePowerOfThree();
+//        MathService mathService = new StandaloneMathService();
+        mathService.calculateOnePlusTwoToThePowerOfThree();
     }
 
     // helper function to represent the act of creating a proxy
