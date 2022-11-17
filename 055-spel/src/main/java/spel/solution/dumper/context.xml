@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="core.log.Dumper" init-method="dump">
+        <property name="lines">
+            <list>
+                <!-- simple expression -->
+                <value>#{1+2}</value>
+
+                <!-- call bean method -->
+                <value>#{@powCalc.powerOf(2,10)}</value>
+
+                <!-- access static value -->
+                <value>#{T(java.lang.Integer).MAX_VALUE}</value>
+
+                <!-- boolean operators -->
+                <value>#{(true OR false) AND true}</value>
+
+                <!-- regexp matching on a string, here to check if chapter name corresponds to pattern "nnn-string"  -->
+                <value>#{'055-spel' matches '^\d{3}-.+'}</value>
+                <value>#{'55-spel' matches '^\d{3}-.+'}</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="powCalc" class="core.math.calculator.PowerOfCalculator" />
+
+</beans>
