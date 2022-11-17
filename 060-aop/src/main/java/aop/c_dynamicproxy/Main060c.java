@@ -1,7 +1,7 @@
 package aop.c_dynamicproxy;
 
 import core.math.service.MathService;
-import core.math.service.SetterInjectedMathService;
+import core.math.service.StandaloneMathService;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
@@ -9,11 +9,11 @@ import java.lang.reflect.Proxy;
 public class Main060c {
 
     public static void main(String[] args) {
-        MathService traceProxy = createProxy(
+        MathService mathService = createProxy(
                 MathService.class,
-                new TraceHandler(new SetterInjectedMathService())
+                new TraceHandler(new StandaloneMathService())
         );
-        traceProxy.calculateOnePlusTwoToThePowerOfThree();
+        mathService.calculateOnePlusTwoToThePowerOfThree();
     }
 
     @SuppressWarnings("unchecked")
