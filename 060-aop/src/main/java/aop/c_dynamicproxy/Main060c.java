@@ -14,6 +14,12 @@ public class Main060c {
                 new TraceHandler(new StandaloneMathService())
         );
         mathService.calculateOnePlusTwoToThePowerOfThree();
+
+        mathService = createProxy(
+                MathService.class,
+                new NoOpHandler()
+        );
+        mathService.calculateOnePlusTwoToThePowerOfThree();
     }
 
     @SuppressWarnings("unchecked")
