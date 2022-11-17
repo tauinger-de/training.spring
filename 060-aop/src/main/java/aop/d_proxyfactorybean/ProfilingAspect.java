@@ -16,13 +16,12 @@ public class ProfilingAspect implements MethodBeforeAdvice, AfterReturningAdvice
     }
 
     @Override
-    public void before(Method method, Object[] args, Object target) throws Throwable {
+    public void before(Method method, Object[] args, Object target) {
         this.beforeMillis = System.currentTimeMillis();
-        method.invoke(target, args);
     }
 
     @Override
-    public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
+    public void afterReturning(Object returnValue, Method method, Object[] args, Object target) {
         long duration = System.currentTimeMillis() - beforeMillis;
         out.printf("Execution of method %s() took %d ms\n", method.getName(), duration);
     }
