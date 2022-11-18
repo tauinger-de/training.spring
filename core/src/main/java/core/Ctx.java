@@ -2,12 +2,14 @@ package core;
 
 import org.springframework.beans.factory.ListableBeanFactory;
 
+import static java.lang.System.out;
+
 public class Ctx {
 
     public static void printDetails(ListableBeanFactory factory) {
-        Fmt.printf("The context contains %d bean(s):", factory.getBeanDefinitionCount());
+        out.printf("The context contains %d bean(s):", factory.getBeanDefinitionCount());
         for (String name : factory.getBeanDefinitionNames()) {
-            Fmt.printf("  - %s", name);
+            out.printf("  - %s : %s\n", name, factory.getType(name).getName());
         }
     }
 }
