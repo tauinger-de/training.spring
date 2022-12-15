@@ -21,7 +21,6 @@
         <module>060-aop</module>
         <module>core</module>
         <module>exrc-blockchain</module>
-        <module>exrc-accounting</module>
     </modules>
 
     <properties>
