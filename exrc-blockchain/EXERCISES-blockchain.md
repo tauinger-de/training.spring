@@ -21,8 +21,11 @@ In dem Zuge können Sie die Hash-Berechnung in eine `HashCalculator` Helferklass
 Erstellen Sie ein neues Interface `TransactionApi` mit folgenden Methoden:
 
 ````java
-void registerTransaction(Transaction transaction);
-        void persistTransactions();
+interface TransactionApi {
+    void registerTransaction(Transaction transaction);
+
+    void persistTransactions();
+}
 ````
 
 ## 4) Blockchain Adapter
