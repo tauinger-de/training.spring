@@ -13,12 +13,12 @@ public class LifecycleBean {
 
     @PostConstruct
     public void starting() {
-        Fmt.printf("Starting up!");
+        System.out.printf("Starting up!");
         startMillis = System.currentTimeMillis();
     }
 
     @PreDestroy
     public void shutdown() {
-        Fmt.printf("Shutting down... I was alive for %d millis", System.currentTimeMillis() - startMillis);
+        System.out.printf("Shutting down... I was alive for %d millis", System.currentTimeMillis() - startMillis);
     }
 }

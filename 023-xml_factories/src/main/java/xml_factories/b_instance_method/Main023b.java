@@ -14,7 +14,7 @@ public class Main023b {
 
         // dump fibonacci numbers
         for (int n = 0; n < 12; n++) {
-            Fmt.printf(
+            System.out.printf(
                     "Got %d",
                     applicationContext.getBean(Integer.class)
             );

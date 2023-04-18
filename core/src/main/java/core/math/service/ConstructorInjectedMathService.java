@@ -11,7 +11,7 @@ public class ConstructorInjectedMathService implements MathService {
     private final PowerOfCalculator powerOfCalculator;
 
     public ConstructorInjectedMathService(SumCalculator sumCalculator, PowerOfCalculator powerOfCalculator) {
-        Fmt.printf("Instantiating a %s instance", getClass().getSimpleName());
+        System.out.printf("Instantiating a %s instance", getClass().getSimpleName());
         this.sumCalculator = sumCalculator;
         this.powerOfCalculator = powerOfCalculator;
     }

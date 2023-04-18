@@ -5,12 +5,21 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <!-- maps target classes to their property-editor classes (names below are converted to Class instances) -->
         <property name="customEditors">
             <map>
                 <entry key="java.awt.Point" value="xmlcontext.j_values_custom.PointPropertyEditor"/>
             </map>
         </property>
     </bean>
+
+<!--    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">-->
+<!--        <property name="converters">-->
+<!--            <set>-->
+<!--                <bean class="xmlcontext.j_values_custom.PointConverter"/>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--    </bean>-->
 
     <bean id="emptyRectangleAt100x200" class="java.awt.Rectangle">
         <constructor-arg value="100:200"/>

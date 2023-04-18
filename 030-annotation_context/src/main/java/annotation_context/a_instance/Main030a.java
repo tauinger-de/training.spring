@@ -10,9 +10,9 @@ public class Main030a {
         var applicationContext = new AnnotationConfigApplicationContext(Main030a.class.getPackageName());
 
         // write data
-        Fmt.printf("The context contains %d bean(s):", applicationContext.getBeanDefinitionCount());
+        System.out.printf("The context contains %d bean(s):", applicationContext.getBeanDefinitionCount());
         for (String name : applicationContext.getBeanDefinitionNames()) {
-            Fmt.printf("  - %s", name);
+            System.out.printf("  - %s", name);
         }
     }
 }

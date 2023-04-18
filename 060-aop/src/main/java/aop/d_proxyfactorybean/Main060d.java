@@ -25,7 +25,7 @@ public class Main060d {
 
         // call
         var result = mathService.calculateOnePlusTwoToThePowerOfThree();
-        Fmt.printf("%d", result);
+        System.out.printf("%d", result);
     }
 
     private static void createProxyForClass() {
@@ -37,7 +37,7 @@ public class Main060d {
 
         // call
         var result = sumCalculator.sumOf(4, 8);
-        Fmt.printf("%d", result);
+        System.out.printf("%d", result);
     }
 
 }

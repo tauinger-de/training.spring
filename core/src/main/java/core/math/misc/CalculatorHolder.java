@@ -11,7 +11,7 @@ public class CalculatorHolder {
     }
 
     public void setCalculators(SumCalculator s, PowerOfCalculator p) {
-        Fmt.printf("Received %s and %s", s.toString(), p.toString());
+        System.out.printf("Received %s and %s", s.toString(), p.toString());
     }
 
 }

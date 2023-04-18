@@ -11,7 +11,7 @@ public class Main030f {
 
         // https://www.goodreads.com/quotes/4637-o-deep-thought-computer-he-said-the-task-we-have
         var meaningOfLifeService = ctx.getBean(MeaningOfLifeService.class);
-        Fmt.printf(
+        System.out.printf(
                 "\nThe Answer to the Great Question...\nOf Life, the Universe and Everything...\nIs...\nIs...\n%s",
                 meaningOfLifeService.getMeaningOfLife()
         );

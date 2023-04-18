@@ -14,14 +14,14 @@ public class Main023a {
 
         // get some randoms
         for (int n = 0; n < 3; n++) {
-            Fmt.printf(
+            System.out.printf(
                     "Got random number: %d",
                     applicationContext.getBean(Integer.class)
             );
         }
 
         // get current date-time
-        Fmt.printf(
+        System.out.printf(
                 "Current date and time is: %s",
                 applicationContext.getBean(LocalDateTime.class)
         );

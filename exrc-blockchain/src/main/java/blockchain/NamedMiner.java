@@ -15,7 +15,7 @@ public class NamedMiner implements Miner {
 
     public NamedMiner(String name) {
         this.name = name;
-        Fmt.printf("Miner '%s' starting up...", name);
+        System.out.printf("Miner '%s' starting up...", name);
     }
 
     @Override
@@ -36,13 +36,13 @@ public class NamedMiner implements Miner {
             var block = new Block(index, nonce, previousBlockHash, pendingTransactions);
             var blockHash = hashOf(block);
             if (blockHash.startsWith(requiredPrefix)) {
-                Fmt.printf("Miner '%s' mined block with hash: %s", name, blockHash);
+                System.out.printf("Miner '%s' mined block with hash: %s", name, blockHash);
                 minedBlock = block;
                 return;
             }
             if (System.currentTimeMillis() - lastReportTimeMillis > 1000) {
                 double hashRate = (nonce * 1000 / (System.currentTimeMillis() - startTimeMillis)) / 1_000_000.0;
-                Fmt.printf("Miner '%s' still mining... Hash rate: %.2f MH/s", name, hashRate);
+                System.out.printf("Miner '%s' still mining... Hash rate: %.2f MH/s", name, hashRate);
                 lastReportTimeMillis = System.currentTimeMillis();
             }
             nonce++;

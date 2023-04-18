@@ -24,12 +24,12 @@ public class Main050c {
     }
 
     private static void analyseResource(Resource r) throws IOException {
-        Fmt.printf("\nResource '%s'", r.getFilename());
-        Fmt.printf("  - description = %s", r.getDescription());
-        Fmt.printf("  - exists = %s", r.exists());
-        Fmt.printf("  - uri = %s", r.getURI());
-        Fmt.printf("  - length = %d", r.contentLength());
-        Fmt.printf("  - last-mod = %s",
+        System.out.printf("\nResource '%s'", r.getFilename());
+        System.out.printf("  - description = %s", r.getDescription());
+        System.out.printf("  - exists = %s", r.exists());
+        System.out.printf("  - uri = %s", r.getURI());
+        System.out.printf("  - length = %d", r.contentLength());
+        System.out.printf("  - last-mod = %s",
                 Instant.ofEpochMilli(r.lastModified()).atZone(ZoneId.systemDefault()).toLocalDateTime());
     }
 

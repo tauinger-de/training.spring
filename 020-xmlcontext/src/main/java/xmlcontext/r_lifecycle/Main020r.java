@@ -14,7 +14,7 @@ public class Main020r {
 
         var dataSource = context.getBean(DataSource.class);
         var connection = dataSource.getConnection();
-        Fmt.printf(
+        System.out.printf(
                 "Got database connection to: \"%s\"",
                 connection.getMetaData()
         );

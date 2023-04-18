@@ -10,7 +10,7 @@ public class Main020m {
         var applicationContext = new GenericXmlApplicationContext(Main020m.class, "context.xml");
 
         ParameterizedMathService mathService = applicationContext.getBean(ParameterizedMathService.class);
-        Fmt.printf(
+        System.out.printf(
                 "Result is %d",
                 mathService.calculate()
         );

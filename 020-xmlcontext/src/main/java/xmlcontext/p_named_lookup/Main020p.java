@@ -10,10 +10,10 @@ public class Main020p {
         var context = new GenericXmlApplicationContext(Main020p.class, "context.xml");
 
         var mathService = context.getBean("mathService1", MathService.class);
-        Fmt.printf("Got MathService with concrete type `%s`", mathService.getClass().getSimpleName());
+        System.out.printf("Got MathService with concrete type `%s`", mathService.getClass().getSimpleName());
 
         mathService = context.getBean("mathService2", MathService.class);
-        Fmt.printf("Got MathService with concrete type `%s`", mathService.getClass().getSimpleName());
+        System.out.printf("Got MathService with concrete type `%s`", mathService.getClass().getSimpleName());
     }
 
 }

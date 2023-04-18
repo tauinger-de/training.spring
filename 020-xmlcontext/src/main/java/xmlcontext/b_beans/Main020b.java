@@ -11,14 +11,14 @@ public class Main020b {
         var applicationContext = new GenericXmlApplicationContext(Main020b.class, "context.xml");
 
         // write data
-        Fmt.printf("The context contains %d bean(s):", applicationContext.getBeanDefinitionCount());
+        System.out.printf("The context contains %d bean(s):", applicationContext.getBeanDefinitionCount());
         for (String name : applicationContext.getBeanDefinitionNames()) {
-            Fmt.printf("  - %s", name);
+            System.out.printf("  - %s", name);
         }
 
         // access bean
         SumCalculator sumCalculator = applicationContext.getBean(SumCalculator.class);
-        Fmt.printf(
+        System.out.printf(
                 "1 + 2 = %d",
                 sumCalculator.sumOf(1, 2)
         );

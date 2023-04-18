@@ -9,6 +9,6 @@ public class TracingBeforeAdvice implements MethodBeforeAdvice {
 
     @Override
     public void before(Method method, Object[] args, Object target) {
-        Fmt.printf("Before %s", method.getName());
+        System.out.printf("Before %s", method.getName());
     }
 }

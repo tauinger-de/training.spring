@@ -13,11 +13,11 @@ public class Main023f {
         var applicationContext = new GenericXmlApplicationContext(Main023f.class, "context.xml");
 
         // get local time
-        Fmt.printf(
+        System.out.printf(
                 "Current time in Berlin is: %s",
                 applicationContext.getBean("berlinTime", ZonedDateTime.class)
         );
-        Fmt.printf(
+        System.out.printf(
                 "Current time in New York is: %s",
                 applicationContext.getBean("newYorkTime", ZonedDateTime.class)
         );

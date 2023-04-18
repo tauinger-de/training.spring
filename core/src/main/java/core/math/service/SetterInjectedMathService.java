@@ -11,7 +11,7 @@ public class SetterInjectedMathService implements MathService {
     protected PowerOfCalculator powerOfCalculator;
 
     public SetterInjectedMathService() {
-        Fmt.printf("Instantiating a %s instance", getClass().getSimpleName());
+        System.out.printf("Instantiating a %s instance", getClass().getSimpleName());
     }
 
     @Override

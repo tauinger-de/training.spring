@@ -13,7 +13,7 @@ public class Main020o {
 
         var powCalc1 = context.getBean(PowerOfCalculator.class);
         var powCalc2 = context.getBean(PowerOfCalculator.class);
-        Fmt.printf(
+        System.out.printf(
                 "Calculator 1 instance = %s, Calculator 2 instance = %s",
                 powCalc1.hashCode(), powCalc2.hashCode()
         );

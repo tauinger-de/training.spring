@@ -13,7 +13,7 @@ public class Main020t {
         var multiLocationsContext = new GenericXmlApplicationContext(
                 Main020t.class,
                 "calculators.xml", "services.xml");
-        Fmt.printf("Context created, counting %d beans", multiLocationsContext.getBeanDefinitionCount());
+        System.out.printf("Context created, counting %d beans", multiLocationsContext.getBeanDefinitionCount());
 
         // separator line
         System.out.println();
@@ -22,7 +22,7 @@ public class Main020t {
         var importingContext = new GenericXmlApplicationContext(
                 Main020t.class,
                 "context.xml");
-        Fmt.printf("Context created, counting %d beans", importingContext.getBeanDefinitionCount());
+        System.out.printf("Context created, counting %d beans", importingContext.getBeanDefinitionCount());
     }
 
 }

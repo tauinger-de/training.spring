@@ -11,13 +11,13 @@ public class Main035b {
         var applicationContext = new AnnotationConfigApplicationContext(Main035b.class.getPackageName());
 
         // write data
-        Fmt.printf("The context contains %d bean(s):", applicationContext.getBeanDefinitionCount());
+        System.out.printf("The context contains %d bean(s):", applicationContext.getBeanDefinitionCount());
         for (String name : applicationContext.getBeanDefinitionNames()) {
-            Fmt.printf("  - %s", name);
+            System.out.printf("  - %s", name);
         }
 
         // get Runnables -- those implement our tests
-        Fmt.printf(
+        System.out.printf(
                 "The result is %d",
                 applicationContext.getBean(ParameterizedMathService.class).calculate()
         );

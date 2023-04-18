@@ -7,6 +7,6 @@ import org.springframework.stereotype.Component;
 public class OtherBean {
 
     public OtherBean() {
-        Fmt.printf("Instantiating a %s instance", getClass().getSimpleName());
+        System.out.printf("Instantiating a %s instance", getClass().getSimpleName());
     }
 }

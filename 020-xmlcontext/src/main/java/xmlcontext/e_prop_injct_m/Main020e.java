@@ -10,7 +10,7 @@ public class Main020e {
         var applicationContext = new GenericXmlApplicationContext(Main020e.class, "context.xml");
 
         MathService mathService = applicationContext.getBean(MathService.class);
-        Fmt.printf(
+        System.out.printf(
                 "(1 + 2) ^ 3 = %d",
                 mathService.calculateOnePlusTwoToThePowerOfThree()
         );

@@ -14,7 +14,7 @@ public class Main020u {
         var commonContext = new GenericXmlApplicationContext(
                 Main020u.class,
                 "common-context.xml");
-        Fmt.printf("Common-Context created, counting %d beans", commonContext.getBeanDefinitionCount());
+        System.out.printf("Common-Context created, counting %d beans", commonContext.getBeanDefinitionCount());
 
         // separator line
         System.out.println();
@@ -25,7 +25,7 @@ public class Main020u {
                 new String[]{"context.xml"},
                 Main020u.class,
                 commonContext);
-        Fmt.printf("Context created, counting %d beans", regularContext.getBeanDefinitionCount());
+        System.out.printf("Context created, counting %d beans", regularContext.getBeanDefinitionCount());
     }
 
 }
