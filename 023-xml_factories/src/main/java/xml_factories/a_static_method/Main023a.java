@@ -1,6 +1,5 @@
 package xml_factories.a_static_method;
 
-import core.Fmt;
 import core.math.service.MathService;
 import org.springframework.context.support.GenericXmlApplicationContext;
 

@@ -1,6 +1,5 @@
 package xml_factories.b_instance_method;
 
-import core.Fmt;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class Main023b {

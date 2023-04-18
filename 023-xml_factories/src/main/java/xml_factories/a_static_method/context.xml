@@ -13,6 +13,6 @@
           scope="prototype"/>
 
     <bean class="xml_factories.a_static_method.MathServiceFactory"
-          factory-method="create" />
+          factory-method="create"/>
 
 </beans>

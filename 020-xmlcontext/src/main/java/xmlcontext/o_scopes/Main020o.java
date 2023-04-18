@@ -1,6 +1,5 @@
 package xmlcontext.o_scopes;
 
-import core.Fmt;
 import core.math.calculator.PowerOfCalculator;
 import org.springframework.context.support.GenericXmlApplicationContext;
 

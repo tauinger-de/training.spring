@@ -1,7 +1,5 @@
 package core.math.calculator;
 
-import core.Fmt;
-
 public class SumCalculator {
 
     public SumCalculator() {

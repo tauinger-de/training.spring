@@ -1,6 +1,5 @@
 package xmlcontext.g_prop_injct_type;
 
-import core.Fmt;
 import core.math.service.MathService;
 import org.springframework.context.support.GenericXmlApplicationContext;
 

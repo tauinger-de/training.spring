@@ -1,6 +1,5 @@
 package annotation_context.a_instance;
 
-import core.Fmt;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main030a {

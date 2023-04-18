@@ -12,16 +12,14 @@ public class MultiplicationService {
         this.productCalculator = productCalculator;
     }
 
-    public int multiply(int ...factors) {
+    public int multiply(int... factors) {
         if (factors.length == 0) {
             return 0;
-        }
-        else if (factors.length == 1) {
+        } else if (factors.length == 1) {
             return factors[0];
-        }
-        else {
+        } else {
             int result = factors[0];
-            for (int n=1; n<factors.length; n++) {
+            for (int n = 1; n < factors.length; n++) {
                 result = this.productCalculator.productOf(result, factors[n]);
             }
             return result;

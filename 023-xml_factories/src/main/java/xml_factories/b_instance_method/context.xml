@@ -4,8 +4,8 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="fibonacciFactory" class="xml_factories.b_instance_method.FibonacciFactory" />
+    <bean id="fibonacciFactory" class="xml_factories.b_instance_method.FibonacciFactory"/>
 
-    <bean factory-bean="fibonacciFactory" factory-method="getNextFibonacci" scope="prototype" />
+    <bean factory-bean="fibonacciFactory" factory-method="getNextFibonacci" scope="prototype"/>
 
 </beans>

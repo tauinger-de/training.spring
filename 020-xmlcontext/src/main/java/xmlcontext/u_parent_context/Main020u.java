@@ -1,6 +1,5 @@
 package xmlcontext.u_parent_context;
 
-import core.Fmt;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 

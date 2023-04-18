@@ -1,6 +1,5 @@
 package xmlcontext.d_constr_injct_a;
 
-import core.Fmt;
 import core.math.service.MathService;
 import org.springframework.context.support.GenericXmlApplicationContext;
 

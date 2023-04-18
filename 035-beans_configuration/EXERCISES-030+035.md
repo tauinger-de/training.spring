@@ -9,7 +9,6 @@ Dazu können Sie sich aus den Klassen im Modul "core" bedienen, d.h. wenn nötig
 
 Natürlich können Sie auch eigene Klassen erstellen und diese nutzen.
 
-
 ## 2) Blockchain
 
 Und/oder Sie schauen sich die komplexere Übung im Project "exrc-blockchain" an.

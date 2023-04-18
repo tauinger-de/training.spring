@@ -1,7 +1,5 @@
 package core.math.service;
 
-import core.Fmt;
-
 public class ParameterizedMathService extends SetterInjectedMathService {
 
     private final int term1;

@@ -4,7 +4,7 @@ In diesem Modul ist eine einfache Blockchain implementiert.
 
 Es können Transaction registriert und in der Blockchain verewigt werden.
 
-Die Länge des Mining-Prozesses kann über einen Difficulty-Wert kontrolliert werden. 
+Die Länge des Mining-Prozesses kann über einen Difficulty-Wert kontrolliert werden.
 
 ## 1) Kennenlernen
 
@@ -19,9 +19,10 @@ In dem Zuge können Sie die Hash-Berechnung in eine `HashCalculator` Helferklass
 ## 3) Transaction API
 
 Erstellen Sie ein neues Interface `TransactionApi` mit folgenden Methoden:
+
 ````java
 void registerTransaction(Transaction transaction);
-void persistTransactions();
+        void persistTransactions();
 ````
 
 ## 4) Blockchain Adapter

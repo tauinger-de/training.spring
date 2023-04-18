@@ -1,6 +1,5 @@
 package xmlcontext.a_context;
 
-import core.Fmt;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class Main020a {

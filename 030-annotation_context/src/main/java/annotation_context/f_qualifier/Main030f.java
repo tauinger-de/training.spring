@@ -1,6 +1,5 @@
 package annotation_context.f_qualifier;
 
-import core.Fmt;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main030f {

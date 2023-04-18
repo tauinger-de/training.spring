@@ -1,7 +1,5 @@
 package xmlcontext.k_values_collections;
 
-import core.Fmt;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;

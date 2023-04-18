@@ -1,6 +1,5 @@
 package annotation_context.d_lifecycle;
 
-import core.Fmt;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;

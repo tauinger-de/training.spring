@@ -1,6 +1,5 @@
 package aop.d_proxyfactorybean;
 
-import core.Fmt;
 import core.aop.TracingBeforeAdvice;
 import core.math.calculator.SumCalculator;
 import core.math.service.MathService;

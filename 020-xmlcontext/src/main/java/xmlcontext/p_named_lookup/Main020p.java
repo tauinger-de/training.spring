@@ -1,6 +1,5 @@
 package xmlcontext.p_named_lookup;
 
-import core.Fmt;
 import core.math.service.MathService;
 import org.springframework.context.support.GenericXmlApplicationContext;
 

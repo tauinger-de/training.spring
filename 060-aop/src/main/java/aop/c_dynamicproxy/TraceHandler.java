@@ -1,7 +1,5 @@
 package aop.c_dynamicproxy;
 
-import core.Fmt;
-
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

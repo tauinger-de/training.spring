@@ -1,6 +1,5 @@
 package resources.c_implementations;
 
-import core.Fmt;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;

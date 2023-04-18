@@ -1,6 +1,5 @@
 package xmlcontext.b_beans;
 
-import core.Fmt;
 import core.math.calculator.SumCalculator;
 import org.springframework.context.support.GenericXmlApplicationContext;
 

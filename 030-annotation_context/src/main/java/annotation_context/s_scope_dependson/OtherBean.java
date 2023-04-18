@@ -1,6 +1,5 @@
 package annotation_context.s_scope_dependson;
 
-import core.Fmt;
 import org.springframework.stereotype.Component;
 
 @Component("other")

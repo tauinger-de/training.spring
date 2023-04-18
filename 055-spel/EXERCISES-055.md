@@ -1,6 +1,6 @@
 # Übungen
 
-## EvaluatingMathService 
+## EvaluatingMathService
 
 Implementieren Sie eine neue Klasse `EvaluatingMathService` -- dieser implementiert nicht das `MathService` Interface.
 

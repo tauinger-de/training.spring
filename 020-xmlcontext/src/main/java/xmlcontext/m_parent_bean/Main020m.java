@@ -1,6 +1,5 @@
 package xmlcontext.m_parent_bean;
 
-import core.Fmt;
 import core.math.service.ParameterizedMathService;
 import org.springframework.context.support.GenericXmlApplicationContext;
 

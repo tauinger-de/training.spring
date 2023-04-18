@@ -5,5 +5,5 @@ Datei.
 
 Fragen Sie den Kontext nach einer Instanz Ihrer Klasse ab.
 
-Wann genau erzeugt Spring die Objekte? Bereits beim Erzeugen des Kontext-Objekts oder erst 
+Wann genau erzeugt Spring die Objekte? Bereits beim Erzeugen des Kontext-Objekts oder erst
 beim ersten Aufruf von `getBean()`?

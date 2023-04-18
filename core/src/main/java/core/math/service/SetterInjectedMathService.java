@@ -1,6 +1,5 @@
 package core.math.service;
 
-import core.Fmt;
 import core.math.calculator.PowerOfCalculator;
 import core.math.calculator.SumCalculator;
 

@@ -1,6 +1,5 @@
 package xmlcontext.t_multiple_contexts;
 
-import core.Fmt;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 import java.io.IOException;

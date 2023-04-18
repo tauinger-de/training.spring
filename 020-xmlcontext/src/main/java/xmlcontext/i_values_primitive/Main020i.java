@@ -1,6 +1,5 @@
 package xmlcontext.i_values_primitive;
 
-import core.Fmt;
 import core.math.service.ParameterizedMathService;
 import org.springframework.context.support.GenericXmlApplicationContext;
 

@@ -2,7 +2,7 @@
 
 ## 1) Verdrahten
 
-Definieren oder nutzen Sie ein paar Klassen Ihrer Wahl und probieren Sie die verschiedenen 
+Definieren oder nutzen Sie ein paar Klassen Ihrer Wahl und probieren Sie die verschiedenen
 Verdrahtungsmöglichkeiten aus.
 
 ## 2) Reihenfolge
@@ -19,7 +19,7 @@ Was passiert, wenn es mehr als einen möglichen Kandidaten von einem Typ gibt?
 
 ## 5) Implementierung
 
-Wie würden Sie ein Autowiring "by type" implementieren? 
+Wie würden Sie ein Autowiring "by type" implementieren?
 D.h. wie könnte die Spring Verdrahtung prinzipiell implementiert sein?
 
 ## 6) Doppeltes Autowiring

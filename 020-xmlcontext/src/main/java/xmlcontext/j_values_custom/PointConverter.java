@@ -7,6 +7,6 @@ import java.awt.*;
 public class PointConverter implements Converter<String, Point> {
     @Override
     public Point convert(String source) {
-        return new Point(1,2);
+        return new Point(1, 2);
     }
 }

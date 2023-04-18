@@ -13,13 +13,13 @@
         </property>
     </bean>
 
-<!--    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">-->
-<!--        <property name="converters">-->
-<!--            <set>-->
-<!--                <bean class="xmlcontext.j_values_custom.PointConverter"/>-->
-<!--            </set>-->
-<!--        </property>-->
-<!--    </bean>-->
+    <!--    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">-->
+    <!--        <property name="converters">-->
+    <!--            <set>-->
+    <!--                <bean class="xmlcontext.j_values_custom.PointConverter"/>-->
+    <!--            </set>-->
+    <!--        </property>-->
+    <!--    </bean>-->
 
     <bean id="emptyRectangleAt100x200" class="java.awt.Rectangle">
         <constructor-arg value="100:200"/>

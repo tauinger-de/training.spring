@@ -1,6 +1,5 @@
 package xmlcontext.r_lifecycle;
 
-import core.Fmt;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 import javax.sql.DataSource;
